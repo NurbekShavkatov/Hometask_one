@@ -2,6 +2,9 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: sans-serif;
 }
 .colors{
   display: flex;
@@ -35,7 +38,7 @@ body{
   justify-content: center;
   margin: 0 auto;
   position: relative;
-  width: 1440px;
+  width: 95%;
   height: 1024px;
   background: #FFFFFF;
   border-radius: 48px;
@@ -65,25 +68,23 @@ ul{
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   padding: 0px;
   gap: 48px;
-  position: absolute;
-  width: 539px;
-  height: 539.5px;
-  left: 453px;
+  margin-top: 180px;
   top: calc(50% - 539.5px/2 - 0.25px);
   
 }
 .photo{
   width: 453.29px;
-  height: 232.5px;
-  margin-left: -50px;
+ 
+}
+
+.photo img{
+  width: 100%;
 }
 .connection{
-  margin-left: 150px;
-  width: 539px;
-  height: 50px;
-  font-family: 'Sharp Grotesk';
+  font-family: 'Sharp Grotesk' , sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 50px;
@@ -91,9 +92,8 @@ ul{
   color: #252F40;
 }
 .oops{
-  width: 538px;
-  height: 48px;
-  font-family: 'Sharp Grotesk';
+ width: 40%;
+  font-family: 'Sharp Grotesk' , sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
@@ -124,12 +124,18 @@ ul{
 .btn_ad{
   width: 181px;
 }
-@media(min-width:0) and (max-width:440px){
-  .header{
+@media(max-width:1182px){
+  .header ul{
     display: none;
   }
-  .section{
-    width: 566px;
-    height: 620.5px;
+
+  .connection{
+    font-size: 40px;
+  }
+  .photo{
+    width: 300px;
+  }
+  .oops{
+    width: 390px;
   }
 }
